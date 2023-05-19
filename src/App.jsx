@@ -2,6 +2,7 @@ import {Routes, Route, Link} from 'react-router-dom'
 import SearchEngine from './components/SearchEngine'
 import News from './components/News'
 import WeatherCard from './components/WeatherCard'
+import FileNotFound from './components/FileNotFound'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Routes>
     <Route path="/" element={<SearchEngine />} />
     <Route path="/news" element={<News />} />
+    <Route path="*" element={<FileNotFound />} />
     </Routes>
     </>
   )

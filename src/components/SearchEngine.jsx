@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
 import SearchEngineChild from './SearchEngineChild';
+import Logo from '../assets/logo.png';
 
 function SearchEngine() {
 
@@ -39,7 +40,7 @@ function SearchEngine() {
     }
 
     return(<>
-    <center><a href=""><img src="src/assets/logo.png" width="200px" height="100%" title="Logo" /></a><br /></center>
+    <center><a href=""><img src={Logo} width="200px" height="100%" title="Logo" /></a><br /></center>
     <input onKeyDown={presscheck} size="40%" onChange={change_value} id="searchID" type="search" placeholder="Search..." style={{border: '0', borderRadius: '5px', padding: '13px', margin: '10px', backgroundColor: 'black', color: 'white'}} />
     <button onMouseOut={changeCSSS} onMouseOver={changeCSS} onClick={searching} style={{marginRight: '5px', marginBottom: '10px', backgroundColor: 'rgb(247 247 247)'}}>Search</button><br />
     <div id='search-text'>{ response.data.Heading ? <SearchEngineChild valuemain={response.data} /> : 'Search It 😁' }</div>

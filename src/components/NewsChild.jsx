@@ -7,11 +7,11 @@ export default function NewsChild({valuemain}) {
     const [ipcontent, setIpContent] = useState({});
     
     useEffect(() => {
-        axios.get('http://ip-api.com/json/')
+        axios.get('https://ipwho.is')
         .then(res => setIpContent(res.data))
     },[]);
 
-    return(<><br /><h1>Latest News: <a target="_blank" href={'https://whatismyipaddress.com/ip/'+ipcontent.query}>{ipcontent.city}, {ipcontent.country}</a></h1>
+    return(<><br /><h1>Latest News: <a target="_blank" href={'https://whatismyipaddress.com/ip/'+ipcontent.ip}>{ipcontent.city}, {ipcontent.country}</a></h1>
 <br /><br />
     <div id="newscard">
 
@@ -40,7 +40,7 @@ export default function NewsChild({valuemain}) {
 
         <br />
         <div>
-            View Source : <a target="_blank" href={'https://whatismyipaddress.com/ip/'+ipcontent.query}>{ipcontent.query} -&gt; {ipcontent.city}, {ipcontent.country}</a><br />
+            View Source : <a target="_blank" href={'https://whatismyipaddress.com/ip/'+ipcontent.ip}>{ipcontent.ip} -&gt; {ipcontent.city}, {ipcontent.country}</a><br />
             
             &lt;&copy; 2023 | <a target='_blank' href='https://github.com/MushahidAli'>Mushahid Ali</a> | All Rights Reserved /&gt;
         </div>

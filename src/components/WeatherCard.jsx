@@ -8,7 +8,7 @@ export default function WeatherCard() {
     var result;
 
     async function run() {
-        await axios.get('http://ip-api.com/json/')
+        await axios.get('https://ipwho.is')
         .then(res => city = (res.data.city))
         await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=f55ab993ce5036a8a971de860791b5a5&units=metric`)
         .then(val => weatherdata = val)
