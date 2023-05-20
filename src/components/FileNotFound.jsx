@@ -2,7 +2,7 @@ import FileNotFoundImg from '../assets/404.png';
 import {Link} from 'react-router-dom'
 
 const FileNotFound = () => {
-    return (<>
+    return (<div style={{color: '#3e0303'}}>
     <br /><br />
     <h2>. : : 404 - Client Side Error - File Not Found : : .</h2>
     <code>
@@ -10,7 +10,7 @@ const FileNotFound = () => {
     </code>
     <br /><br />
     <img width="50%" height="50%" src={FileNotFoundImg} />
-    </>);
+    </div>);
 }
 
 export default FileNotFound;

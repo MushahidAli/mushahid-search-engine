@@ -25,16 +25,6 @@ export default function NewsChild({valuemain}) {
 <NewsCard valuemain={valuemain.articles[7]} />
 <NewsCard valuemain={valuemain.articles[8]} />
 <NewsCard valuemain={valuemain.articles[9]} />
-<NewsCard valuemain={valuemain.articles[10]} />
-<NewsCard valuemain={valuemain.articles[11]} />
-<NewsCard valuemain={valuemain.articles[12]} />
-<NewsCard valuemain={valuemain.articles[13]} />
-<NewsCard valuemain={valuemain.articles[14]} />
-<NewsCard valuemain={valuemain.articles[15]} />
-<NewsCard valuemain={valuemain.articles[16]} />
-<NewsCard valuemain={valuemain.articles[17]} />
-<NewsCard valuemain={valuemain.articles[18]} />
-<NewsCard valuemain={valuemain.articles[19]} />
 
         </div>
 
